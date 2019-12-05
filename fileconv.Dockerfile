@@ -18,4 +18,7 @@ RUN curl -Ls $UNO_URL -o /usr/bin/unoconv &&\
     ln -s /usr/bin/python3 /usr/bin/python &&\
     unoconv --version
 
+# FFmpeg
+RUN apk add ffmpeg
+
 CMD [ "/bin/bash" ]
